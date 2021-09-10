@@ -1,0 +1,89 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f4f6f9;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+  .ubuntu {
+    font-family: 'Ubuntu';
+  }
+
+  .MagNet {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 5%;
+    -webkit-box-align: center;
+  }
+
+    .main {
+     position: relative;
+    min-height: 100vh;
+    background: #f4f6f9; 
+
+
+  }
+
+  .content-wrap {
+     padding-bottom: 2.5rem;    
+    margin-left: 11%;
+    margin-right: 5%; 
+  }
+
+  @media (max-width: 800px) {
+    .content-wrap  {
+      margin-left: 20%;
+      }
+
+ 
+} 
+
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+   
+  }
+
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  /* header color*/
+.borderHeader{
+  border-bottom:  1px solid #dee2e6;
+   z-index: 1034; 
+  box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+  margin-top: -25px;
+}
+
+.headerPosition{
+  z-index: 1;
+}
+
+
+
+
+  @import url("sidebar/sidebar.css");
+  @import url("Create/Create.css");
+  @import url("table/table.css");
+  @import url("ProductList/product.css");
+  @import url("Result/result.css");
+  @import url("Item/item.css");
+  @import url("love/love.css");
+  @import url("Post/post.css");
+  @import url("Icon.css");
+  @import url("Home/home.css");
+  @import url("Home/cardIndex.css");
+  @import url("Loader/Loader.css");
+  @import url("history/history.css");
+  @import url("Login/login.css");

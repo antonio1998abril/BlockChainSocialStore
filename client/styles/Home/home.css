@@ -1,0 +1,112 @@
+.home_card{
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 10px;
+}
+.home_card .imagesearch{
+    border-radius:5px;
+    margin: auto;
+    width:810px;
+    height:520px;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background:url('../../public/Searchindex.png');
+    background-size: cover;
+    position:center;
+    box-shadow: 0 0 15px rgb(219, 219, 219);  
+    transition: all 0.5s ease;
+ }
+ .imagesearch:hover{
+    box-shadow: 2px 14px 32px 10px rgba(247, 211, 51, 0.15);
+      
+ }
+
+.positionBar{
+        padding-top: 170px;
+}
+ .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+   
+    }
+
+    .search_input{
+    color: rgb(225, 231, 225);
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    width: 400px;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 410px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    color: #e74c3c;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:rgb(190, 50, 50);
+    text-decoration:none;
+    }
+
+    @media (max-width: 1010px) {
+        .home_card .imagesearch{
+            width:540px;
+            height:390px;
+        }
+
+        .search_input{
+            width: 300px
+            }
+        
+            .positionBar{
+                padding-top: 120px;
+                margin-left: 40px;
+            }
+
+            .searchbar:hover > .search_input{
+                width: 330px;
+                }
+
+    }
+
+    @media (max-width: 670px) {
+        .home_card .imagesearch{
+            width:280px;
+            height:170px;
+        }
+
+        .search_input{
+            width: 200px;
+            }
+        
+            .positionBar{
+                padding-top: 17px;
+                margin-left: -1px;
+            }
+
+            .searchbar:hover > .search_input{
+                width: 200px;
+                }
+    }

@@ -1,0 +1,111 @@
+.IndexCard{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 250px;
+    margin-top: 20px;
+    gap: 10px;
+    word-break: break-all;
+    
+}
+.IndexCard .Present {
+    background: white;
+/*  padding:1em;    */
+    margin-left: 20px;
+    transition: all 0.5s ease;
+    box-shadow: 2px 14px 32px 10px rgba(245, 245, 245, 0.822);
+    border-radius: 25px;
+    border: 1px solid rgba(0,0,0,.125);
+    
+    
+}
+.IndexCard .Present:hover {
+    box-shadow: 2px 14px 32px 10px rgb(235, 235, 235);
+}
+.bodyIndex{
+    padding:1em; 
+    
+}
+
+/*   .IndexFooter{
+    background-color: cadetblue;
+   
+        padding: .75rem 1.25rem;
+        background-color: rgba(0,0,0,.03);
+        border-top: 0 solid rgba(0,0,0,.125);
+ 
+} */
+
+.IndexFooter{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+    
+    
+}
+ .IndexFooter .infoIndex  {
+ /* padding-top: 150px; */
+ border-radius: 1px 1px 23px 23px;
+ margin-top: 143px;  
+ padding: .75rem 1.25rem; 
+ background-color: rgba(0,0,0,.03);
+ border-top: 1px solid rgba(0,0,0,.125);
+}
+
+
+.buttonCard{
+  
+    border: none;
+    border-radius: 2px;
+    float: right;
+     display: flex; 
+    justify-content: center; 
+     align-items: center;  
+    border-radius: 7px;
+    color:rgb(255, 255, 255);
+    text-decoration:none; 
+    background-color:#1c86dd ;
+    transition: all 0.5s ease;
+
+    cursor: pointer;
+    outline: none;
+    background-position: center;
+}
+
+.buttonCard:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #5cb4fc 1%) center/15000%;
+  }
+
+
+.iconSee{
+    margin-top: -10px;
+    height: 17px;
+    width: 21px;
+    }
+.textIndex{
+    margin-left: 10px;
+    }
+
+   .activee{
+        background-color: #cfe1f0ef;
+        background-size: 100%;
+        transition: background 0s;
+      }
+    
+
+
+/*  */
+
+
+@media (max-width: 1200px) {
+    .IndexCard{       
+        grid-template-columns: 50% 50%;
+ 
+    }
+}
+
+@media (max-width: 600px) {
+    .IndexCard{       
+        grid-template-columns: 100%;
+ 
+    }
+}
